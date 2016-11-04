@@ -108,12 +108,12 @@ static NSDateFormatter *dateFormatter;
     {
         if (self.entitlements.getTaskAllow.boolValue && _provisionedDevices.count > 0) {
             _buildType = kProfileItemBuildTypeAdhoc;
-            _buildTypeString = @"Ad hoc";
+            _buildTypeString = @"Development";
         }
         else
         {
             _buildType = kProfileItemBuildTypeDevelopment;
-            _buildTypeString = @"Development";
+            _buildTypeString = @"Ad hoc";
         }
     }
     
